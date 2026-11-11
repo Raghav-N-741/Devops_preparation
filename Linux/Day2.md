@@ -1,0 +1,18 @@
+- If the file already exists, touch does not erase its contents. It updates the file's timestamps.
+- Cmd: mkdir -p projects/backend/java   #creating nested directories
+- cp with mkdir :
+    - -r:copy directory recursively but unlike -a it do not store the timestamps and file permissions
+    - -v(verbose) prints name of every file as it is being copied
+    - -i (Interactive): Asks for your confirmation before overwriting any existing files in the destination
+    - -u (Update): Only copies files that are newer than the destination files or missing from destination 
+- Cmd: cat  #display entire content of a file
+- Cmd: less #view content page by page
+- Cmd: head #beginning of a file,first 10 lines by default (similarly tail - end of a file)
+    - for specific no: head -n 5 application.log
+- Cmd: tail -f application.log  #continuosuly displays file new lines as it is being added
+- File extensions are useful naming conventions, but they don't automatically determine the actual contents or format.
+- Cmd: file filename #reads its conten reports a type
+- Cmd: ls -h (human readable file size)
+- Wildcards:
+    - *: 0 or more characters
+    - ?: exactly 1 character 
