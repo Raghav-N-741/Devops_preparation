@@ -1,0 +1,29 @@
+- Shell prompt(command prompt): username@hostname:~$
+- A command from the command prompt is sent to the shell which interprets it and tells the os
+- Filesystem:
+    - Cmd: ls (list show) (-a including hidden files,-l detailed listing)
+    - Cmd: touch filename1 filaname2 ... #to create empty file
+    - Cmd: mkdir directory_name
+    - Cmd: cp file1.txt file2.txt #copy files
+    - Cmd: cp file1.txt new-folder/
+    - Cmd: mv <file-name> <folder-name> # Move specific file to this folder
+    - Cmd: mv file2.txt file2-renamed.txt #for renaming a file too
+    - Cmd: rmdir #removes the directory only if it is empty
+    - Cmd: rm -r(recursively) #removes directory even if it is not empty (rm -rf  without asking permission)
+- Home address: ~/ = /home/username
+- Cmd: pwd (present working directory)
+-  For example, starting from third-level, using cd ../.. would take us back two levels, to my-folder
+- The cp command is not just for files. We can make backup copies of a whole directory (and all its contents) using the -a (or --archive) flag. This flag preserves all the file permissions:
+ubuntu@tutorial:~$ cp -a new-folder/ new-folder-backup/
+- $: normal user         #: root user
+- Linux uses a hierarchical filesystem structure. (single root directory)
+- paths:
+    - /home	Regular users' home directories
+    -  /root Root user's home directory
+    -  /etc	System configuration files
+    - /bin Essential user commands
+- Special path symbols
+    - /	Root directory
+    - ~	Current user's home directory
+    - .	Current directory
+    - ..	Parent directory
