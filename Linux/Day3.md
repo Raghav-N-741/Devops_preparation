@@ -1,0 +1,30 @@
+- tree -L 2 /     # -L 2 limits the displayed depth to two directory levels.
+- Cmd: whoami #check who the current user is
+- Cmd: sudo -i #switch to root if permitted
+- Cmd: exit #return to your regular user
+- Types of User:
+    - Root user:
+        - The root user is the superuser or administrator.It has UID 0 and has extensive privileges over the system.
+    - Regular user
+- Linux internally identifies users using numerical IDs called UIDs.
+- Groups: Instead of assigning permissions individually to multiple users,Linux allows you to assign permissions to a group.
+- A user can belong to multiple groups
+- Types:
+    - primary group:Every user has one primary group.New files created by that user generally inherit this group, subject to the directory's group inheritance settings and other filesystem rules.
+    - supplementary group: a user can belong to multiple groups
+- Cmd: Creating users: sudo adduser username 
+- Cmd: deleting user: sudo deluser username (remvoes the user acccount but leaves their home directory)
+- instead use this : sudo deluser --remove-home developer
+- adduser vs useradd:
+    - higher level uitility                - lower level utility
+    - interactive by default               - require options(flags) for desired setup
+    - convenient for manual creation       - usually used for scripts
+- Groups:
+    - Cmd: creating one: sudo addgroup devops
+    - Cmd: check if one exists: getent group devops
+    - Cmd: delete a group: sudo delgroup devops
+    - adding user to a group: Cmd: sudo usermod -aG developer(user) devops(group)
+        - flags: -a(append with the existing supplementry groups ) -g(set it as primary group) -G(secondary)
+- On Ubuntu, users belonging to the sudo group are generally authorized to use sudo through the default sudo configuration.
+- sudo -i logs you into a full root (administrator) shell session, making your terminal behave as if you logged directly into the computer as the root user. (if i use -s then a non login shell as root started)
+- Cmd:switching users : su - username   (sudo -i #switch to root)
