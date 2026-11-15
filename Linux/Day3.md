@@ -23,7 +23,7 @@
     - Cmd: creating one: sudo addgroup devops
     - Cmd: check if one exists: getent group devops
     - Cmd: delete a group: sudo delgroup devops
-    - adding user to a group: Cmd: sudo usermod -aG developer(user) devops(group)
+    - adding user to a group: Cmd: sudo usermod -aG (group) (user)
         - flags: -a(append with the existing supplementry groups ) -g(set it as primary group) -G(secondary)
 - On Ubuntu, users belonging to the sudo group are generally authorized to use sudo through the default sudo configuration.
 - sudo -i logs you into a full root (administrator) shell session, making your terminal behave as if you logged directly into the computer as the root user. (if i use -s then a non login shell as root started)
