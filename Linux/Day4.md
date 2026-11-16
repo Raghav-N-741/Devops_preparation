@@ -1,0 +1,14 @@
+- every file has an associated owner and a group
+- permission categories: owner(user)    group    others     where each have rwx and d(directory),-(file)
+- Changing file permissions:
+    - chown(changing owner): chown newuser particularfilename
+        - owner and group: chown newuser:newgroup particularfilename
+        - recurisevly for a directory: sudo chown -R developer:devops projects/
+    - chmod(change mode): r=4  w=2  x=1  + add permission - remove permissions =set exactpermissions
+        - (numerical notation)eg: chmod 774 filename
+        - (symbolic notation)eg: chmod u+x filenmae,chmod g-w filename, chmod o=r filename
+        - recursive permission change:eg: chmod -R directoryname/
+    -  chgrp: changing group eg:chgrp newgroup filename
+- To inspect a directory's own permissions instead of its contents: ls -ld projects/
+- umask:
+    - 4 bits 0000  The first digit can be a combination of 4 for setuid, 2 for setgid, and 1 for sticky bit.
