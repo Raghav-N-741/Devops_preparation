@@ -4,6 +4,7 @@
     - Cmd: ls (list show) (-a including hidden files,-l detailed listing)
     - Cmd: touch filename1 filaname2 ... #to create empty file
     - Cmd: mkdir directory_name
+    - Cmd: mkdir -p projects/backend/java   #creating nested directories
     - Cmd: cp file1.txt file2.txt #copy files
     - Cmd: cp file1.txt new-folder/
     - Cmd: mv <file-name> <folder-name> # Move specific file to this folder
