@@ -1,5 +1,5 @@
 - If the file already exists, touch does not erase its contents. It updates the file's timestamps.
-- Cmd: mkdir -p projects/backend/java   #creating nested directories
+
 - cp with mkdir :
     - -r:copy directory recursively but unlike -a it do not store the timestamps and file permissions
     - -v(verbose) prints name of every file as it is being copied
